@@ -27,22 +27,24 @@ document.querySelector('.check').addEventListener('click', function () {
     //when its too high
   } else if (guess > secretNumber) {
     if (score > 1) {
-      document.querySelector('.message').textContent = 'Number is too high!';
+      document.querySelector('.message').textContent =
+        "Sike That's a wrong number 🤪(too high !)";
       score--;
       document.querySelector('.score').textContent = score;
     } else {
-      document.querySelector('.message').textContent = 'you lost the game!';
+      document.querySelector('.message').textContent = 'You lost the game! 😂';
       document.querySelector('.score').textContent = 0;
     }
 
     //when its too low
   } else if (guess < secretNumber) {
     if (score > 1) {
-      document.querySelector('.message').textContent = 'Number is too low !';
+      document.querySelector('.message').textContent =
+        "Sike That's a wrong number 🤪(too low !)";
       score--;
       document.querySelector('.score').textContent = score;
     } else {
-      document.querySelector('.message').textContent = 'you lost the game!';
+      document.querySelector('.message').textContent = 'You lost the game! 😂';
       document.querySelector('.score').textContent = 0;
     }
   }
