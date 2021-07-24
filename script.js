@@ -50,6 +50,13 @@ document.querySelector('.check').addEventListener('click', function () {
   }
 });
 
+document.querySelector('.guess').addEventListener('keyup', function (e) {
+  if (e.keyCode === 13) {
+    e.preventDefault();
+    document.getElementById('button').click();
+  }
+});
+
 document.querySelector('.again').addEventListener('click', function () {
   secretNumber = Math.trunc(Math.random() * 20) + 1;
   score = 20;
